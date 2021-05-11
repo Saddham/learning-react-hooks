@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import StarRating from './components/use-state/StartRating';
+import Section from './components/use-effect/Section';
+import Users from './components/use-effect/Users';
+import Incrementor from './components/use-reducer/Incrementor';
+import Messenger from './components/use-reducer/Messenger';
+import ColorForm from './components/use-ref/ColorForm';
+import Trees from './components/use-context/Trees';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <StarRating totalStars={5} />
+      <Section />
+      <Users />
+      <Incrementor />
+      <Messenger />
+      <ColorForm />
+      <Trees />
+    </>
   );
 }
 
